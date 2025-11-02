@@ -1,0 +1,27 @@
+[project]
+name = "model_diabetes"
+version = "0.1.0"
+description = "Modelo de Machine Learning para diagnóstico preditivo de diabetes (XGBoost + Scaler + Imputação Mediana)."
+readme = "README.md"
+authors = [
+    { name = "Luis Alberto Concha Curay ", email = "luisconcha@gmail.com" },
+]
+license = { text = "MIT" }
+requires-python = ">=3.12"
+
+# Dependências principais (ambiente de execução e modelagem)
+dependencies = [
+    "inflection>=0.5.1",
+    "jinja2>=3.1.6",
+    "matplotlib>=3.10.7",
+    "nbformat>=5.10.4",
+    "pandas>=2.3.3",
+    "plotly>=6.3.1",
+    "scikit-learn>=1.7.2",
+    "scipy>=1.16.2",
+    "seaborn>=0.13.2",
+    "xgboost>=3.1.1",
+]
+
+[dependency-groups]
+dev = ["ipykernel>=7.0.1"]
